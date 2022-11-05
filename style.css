@@ -29,57 +29,50 @@ h3{
 /*--------------------------------------------------------------
 HEADER
 --------------------------------------------------------------*/
-.header{
-    height: 100vh;
-    background-image:linear-gradient(
-        to right bottom, 
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)), url(eat.jpg);
-    display: flex;
-    padding: 2em 7em;
-    justify-content: space-between;
-    position: relative;
-    background-size: cover;
-    background-position: top;
+
+    .header-top{
+        background-color: #191919;
+        display: flex;
+        height: 10vh;
+        justify-content: space-between;
+        position: relative;
+         background-size: cover;
+        background-position: center;
+    }
+    .logo{
+        width: 90px;
+        height: 70px;
+        padding: 10px,  20px;
     }
 
-.main{
-    font-size: 40px;
-    letter-spacing: 15px;
-   font-weight: 700;
-  color: #ffcf88;
-  font-family:'Satisfy', sans-serif;
-}
 
-.sub{
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 5.5px;
-    margin: 10px;
-    color: #ffcf88;
-}
    
 nav{
     margin-top: 0.5em;
 }
+
 nav a{
     text-decoration: none;
     margin-right: 1em;
-    color: #ffffff;
+    color: #ffcf88;
+    font-weight: bold;
+    font-size: 70%;
 }
 
-
 .btn {
-    background: #ffb03b;
-  color: #fff;
-  border-radius: 50px;
-  margin: 0 0 0 20px;
-  padding: 10px 25px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  transition: 0.3s;
-  white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px 10px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+    margin: 0 3px 10px 3px;
+    transition: all ease-in-out 0.3s;
+    background: #EB5353;
+    border: 2px solid #ffb03b;
+    border-radius: 50px;
+    text-decoration: none;
   }
   
   .btn:hover {
@@ -92,41 +85,56 @@ nav a{
     text-decoration: none;
   }
 
-  .menuu {
-    cursor: pointer;
-    display: inline-block;
-    padding: 8px 16px 10px 16px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1;
-    color: #ffffff;
-    margin: 0 3px 10px 3px;
-    transition: all ease-in-out 0.3s;
-    background: transparent;
-    border: 2px solid #ffb03b;
-    border-radius: 50px;
-    text-decoration: none;
-  }
   
-  .menuu:hover {
-    background: #3cb0fd;
-    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-    text-decoration: none;
-  }
+
+  /*--------------------------------------------------------------
+SUB-HEADER
+--------------------------------------------------------------*/
+
+  .headingprimary{
+    margin: 15% 0 20% 0;
+    position: relative;
+    padding: 1em 7em;  
+
+}
+
+.main{
+    font-size: 40px;
+    letter-spacing: 15px;
+   font-weight: 700;
+  color: #ffcf88;
+  font-family:'Satisfy', sans-serif;
+}
+
+.sub{
+    font-size: 40px;
+    padding-top: 30%;
+    font-weight: 700;
+    letter-spacing: 5.5px;
+    margin: 10px;
+    color: #ffcf88;
+}
   .textbox{
-      position: absolute;
+      position: relative;
+      margin: 23% 0% 2% 4.5%;
+      padding: 0% 0 10% 0;
+      height: 100vh;
+      width: 100%;
+      background-image:linear-gradient(
+        to right bottom, 
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)), url(eat.jpg);
+        background-position: center;
+        background-size: cover;
       top: 55%;
       left: 45.7%;
       text-align: center;
       transform: translate(-50%, -50%);
       color: #ffffff;
+      padding: 10px,  20px;
   }
 
-
+ 
   .btn:link,
   .btn{
         text-transform: uppercase;
@@ -136,8 +144,33 @@ nav a{
         border-radius: 100px;
         transition: all  .2s;
         position: relative;
-        
     }
+
+    .menuu {
+        cursor: pointer;
+        display: inline-block;
+        padding: 8px 16px 10px 16px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+        color: #ffffff;
+        margin: 10px 3px 10px 3px;
+        transition: all ease-in-out 0.3s;
+        background: transparent;
+        border: 2px solid #ffb03b;
+        border-radius: 50px;
+        text-decoration: none;
+      }
+
+      .menuu:hover {
+        background: #3cb0fd;
+        background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+        text-decoration: none;
+      }
 
 /*--------------------------------------------------------------
 EAT HEALTHY SECTION
@@ -145,6 +178,8 @@ EAT HEALTHY SECTION
     .row{
         display: flex;
         height: 88%;
+        margin-top: -25.5%;
+        justify-content: center;
         align-items: center;
         background-color: #EDDFB3;
         color: #06283D;
@@ -164,19 +199,6 @@ EAT HEALTHY SECTION
         color: black;
     }
 
-    .home{
-        text-align: center;
-        margin: 15px 0 15px 0;
-        
-    }
-
-    .para{
-     letter-spacing: 1px;
-     font-weight: 300;
-    margin-top: 5px;    
-    color: black;
-    }
-
     .food{
         display: inline-block;
         justify-content: center;
@@ -187,7 +209,7 @@ EAT HEALTHY SECTION
         width: 200px;
         height: 230px;
         cursor: pointer;
-        background-image: url(chips.jpg);
+        background-image: url(pasta.jfif);
         background-position: center;
         background-size: cover;
     }
@@ -197,7 +219,7 @@ EAT HEALTHY SECTION
     }
 
     .food3{
-    background-image: url(shawarma.jpg);
+    background-image: url(white.jfif);
     }
 
     .food4{
@@ -216,6 +238,17 @@ HOME DELIVERY SECTION
     color: #06283D;
     text-align: justify;
     justify-content: center;
+}
+.home{
+    text-align: center;
+    margin: 15px 0 15px 0;
+    }
+
+.para{
+ letter-spacing: 1px;
+ font-weight: 300;
+margin-top: 5px;    
+color: black;
 }
 
 .col2 {
@@ -289,8 +322,6 @@ RECIPEE SECTION
     background-image: url(bs.jpg);
 }
 
-
-
 .recipee a{
     cursor: pointer;
     display: inline-block;
@@ -317,7 +348,7 @@ RECIPEE SECTION
 --------------------------------------------------------------*/
 .wrapper{
     width: 1200px;
-    margin: 100px auto;
+    margin: 100px auto 0;
 }
 
 .title{
@@ -331,6 +362,7 @@ RECIPEE SECTION
     position: relative;
     display: inline-block;
     color: #EB5353;
+    animation: animate 4s linear infinite;
 }
 
 .title h4 span{
@@ -350,6 +382,7 @@ RECIPEE SECTION
     bottom: 0;
     left: 50%;
     transform: translateX(-50px);
+    animation: animate 4s linear infinite;
 }
 
 .menu{
@@ -401,7 +434,152 @@ RECIPEE SECTION
     font-style: italic;  
 }
 
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery {
+    margin-top: 50px;
+    padding-bottom: 0;
+  }
+
+.gallerysec{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 400;
+    
+}
+
+.galleryspan{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 5.5px;
+    margin: 0px 10px;
+    color: #D61C4E;
+    
+}
+
+.gallerytitle h2:before{
+    position: relative;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #FF9F29;
+    bottom: -100px;
+    left: 33%;
+    transform: translateX(-33%);
+    animation: animate 4s linear infinite;
+    transition-delay: .2s;
+}
+
+@keyframes animate{
+0%{
+    width: 100px;
+}
+50%{
+    width: 200px;
+}
+100%{
+    width: 100px;
+}
+}
+
+.gallerytitle p{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto 40px auto;
+    
+}
+  .gallery-item{ 
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:5px ;
+    justify-content: center;
+    position: relative;
    
+  }
+
+  .gallery img{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 3px 3px auto;
+  }
+
+
+  .gallery-item img {
+    transition: all ease-in-out 0.4s;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }   
+
+
+  /*--------------------------------------------------------------
+FEATURE
+--------------------------------------------------------------*/
+
+.feature1{
+    margin: 0 10px 10px 60px;
+    width: 50%;
+  } 
+  
+  .featuremain{
+    float: left;
+    margin-right: 70px;
+    height: 230px;
+    width: 400px;
+}
+
+.featuretitle{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    }
+
+.clear{
+    clear: both;
+}
+
+.clear2{
+    clear: both;
+    margin: 0px 0px 30px 0px;
+}
+ul{
+    list-style-position: inside;
+    list-style-image: url('gallery/list2.png');
+    margin: 5px;
+    }
+
+.featuretitle2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.featuretitle2 p{
+    justify-content: center;
+    margin: 0px 50px 0px 0px;
+}
+
+.feature2{
+    margin-top: 5%;
+    margin-left: 45%;
+    width: 50%;
+
+}
+
+.featuremain2{
+    float: right;
+    height: 230px;
+    width: 400px;
+}
+
+
        /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -411,6 +589,7 @@ RECIPEE SECTION
     font-size: 14px;
     text-align: center;
     padding: 30px 0;
+    margin: 20px;
   }
   
   #footer h3 {
@@ -431,12 +610,15 @@ RECIPEE SECTION
   
   #footer .social-links {
     margin: 0 0 40px 0;
+    display: flex;
+    width: 100%;
+    gap: .5em;
+    justify-content: center;
   }
   
   #footer .social-links a {
     font-size: 18px;
-    display: inline-block;
-    background: #46423b;
+    background: #FF731D;
     color: #fff;
     line-height: 1;
     padding: 8px 0;
@@ -449,7 +631,7 @@ RECIPEE SECTION
   }
   
   #footer .social-links a:hover {
-    background: #ffb03b;
+    background: #1746A2;
   }
   
   #footer .copyright {
